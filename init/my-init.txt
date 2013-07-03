@@ -1,0 +1,2 @@
+max sortpatcherdictonsave 1;
+max size;
