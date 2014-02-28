@@ -70,8 +70,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 126.0, 58.0, 25.0, 25.0 ],
-					"presentation_rect" : [ 124.0, 58.0, 0.0, 0.0 ]
+					"patching_rect" : [ 126.0, 58.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -163,7 +162,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 455.0, 72.0, 49.0, 20.0 ],
-									"presentation_rect" : [ 406.0, 108.0, 0.0, 0.0 ],
 									"text" : "clip 0 1"
 								}
 
@@ -193,20 +191,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 65.0, 132.0, 82.0, 20.0 ],
 									"text" : "!/ samplerate"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-20",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 65.0, 102.0, 35.0, 20.0 ],
-									"text" : "mtof"
 								}
 
 							}
@@ -277,8 +261,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 65.0, 72.0, 203.0, 20.0 ],
-									"text" : "in 4 @comment \"MIDI note number\""
+									"patching_rect" : [ 65.0, 72.0, 172.0, 20.0 ],
+									"text" : "in 4 @comment \"frequency in\""
 								}
 
 							}
@@ -403,7 +387,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-20", 0 ],
+									"destination" : [ "obj-21", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-12", 0 ]
@@ -434,15 +418,6 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-2", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-20", 0 ]
 								}
 
 							}
