@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 25.0, 69.0, 887.0, 503.0 ],
+		"rect" : [ 290.0, 186.0, 887.0, 503.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -29,13 +29,40 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 539.0, 41.0, 150.0, 20.0 ],
+					"text" : "adjust threshold value"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 467.5, 41.0, 50.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 344.5, 234.0, 20.0, 20.0 ],
-					"presentation_rect" : [ 345.5, 231.0, 0.0, 0.0 ]
+					"patching_rect" : [ 344.5, 234.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -49,7 +76,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
 					"patching_rect" : [ 344.5, 187.0, 44.0, 20.0 ],
-					"presentation_rect" : [ 345.5, 184.0, 0.0, 0.0 ],
 					"text" : "edge~"
 				}
 
@@ -61,8 +87,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 467.5, 234.0, 20.0, 20.0 ],
-					"presentation_rect" : [ 442.5, 234.0, 0.0, 0.0 ]
+					"patching_rect" : [ 467.5, 234.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -76,7 +101,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
 					"patching_rect" : [ 467.5, 187.0, 44.0, 20.0 ],
-					"presentation_rect" : [ 442.5, 187.0, 0.0, 0.0 ],
 					"text" : "edge~"
 				}
 
@@ -102,7 +126,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
 					"patching_rect" : [ 406.0, 187.0, 44.0, 20.0 ],
-					"presentation_rect" : [ 540.0, 169.0, 0.0, 0.0 ],
 					"text" : "edge~"
 				}
 
@@ -113,7 +136,7 @@
 					"fontsize" : 12.0,
 					"id" : "obj-19",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
 					"patching_rect" : [ 344.5, 148.0, 142.0, 20.0 ],
@@ -242,11 +265,20 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "zsy.nx~.maxpat",
-				"bootpath" : "/Users/larme/Documents/Max/packages/_common/patchers",
-				"patcherrelativepath" : "../../Documents/Max/packages/_common/patchers",
+				"bootpath" : "/Users/larme/Documents/Max/packages/_common/patchers/msp",
+				"patcherrelativepath" : "../patchers/msp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
