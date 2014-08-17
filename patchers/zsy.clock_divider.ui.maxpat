@@ -54,11 +54,11 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 435.0, 23.0, 59.5, 20.0 ],
 					"restore" : 					{
-						"divider" : [ 0 ]
+						"divider" : [ 1 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u393000500"
+					"varname" : "u657000217"
 				}
 
 			}
@@ -162,6 +162,8 @@
 					"fontsize" : 12.0,
 					"id" : "obj-3",
 					"maxclass" : "number",
+					"minimum" : 1,
+					"mouseup" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
@@ -251,7 +253,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "zsy.clock_divider.maxpat",
-				"bootpath" : "/Users/larme/Dropbox/Music/max patches",
+				"bootpath" : "/Users/larme/Documents/Max/packages/_common/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
