@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 8,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 100.0, 144.0, 640.0, 480.0 ],
+		"rect" : [ 28.0, 76.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -66,7 +66,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 446.0, 134.0, 174.0, 33.0 ],
-					"presentation_rect" : [ 384.0, 133.0, 0.0, 0.0 ],
 					"text" : "use defset to protect a key whose value is already set"
 				}
 
@@ -94,8 +93,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 76.333336, 257.0, 50.0, 18.0 ],
-					"text" : "a 1"
+					"patching_rect" : [ 82.333336, 259.0, 50.0, 18.0 ],
+					"text" : "b 101"
 				}
 
 			}
@@ -136,8 +135,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 47.0, 192.0, 200.0, 20.0 ],
-					"text" : "zsy.defdict there_must_be_a_name"
+					"patching_rect" : [ 47.0, 192.0, 218.0, 20.0 ],
+					"text" : "zsy.dict.defval there_must_be_a_name"
 				}
 
 			}
@@ -217,7 +216,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "zsy.defdict.maxpat",
+				"name" : "zsy.dict.defval.maxpat",
 				"bootpath" : "/Users/larme/Documents/Max/packages/_common/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
