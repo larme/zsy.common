@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 8,
 			"architecture" : "x86"
 		}
 ,
@@ -34,9 +34,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "zsy.counter.maxpat",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 5.0, 6.0, 236.0, 64.0 ],
+					"numoutlets" : 5,
+					"outlettype" : [ "int", "", "", "int", "" ],
+					"patching_rect" : [ 5.0, 6.0, 349.0, 61.0 ],
 					"varname" : "zsy.counter"
 				}
 
@@ -46,21 +46,21 @@
 		"dependency_cache" : [ 			{
 				"name" : "zsy.counter.maxpat",
 				"bootpath" : "/Users/larme/Documents/Max/packages/_common/patchers",
-				"patcherrelativepath" : "../../../Documents/Max/packages/_common/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsy.wrap.maxpat",
 				"bootpath" : "/Users/larme/Documents/Max/packages/_common/patchers",
-				"patcherrelativepath" : "../../../Documents/Max/packages/_common/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsy.%.maxpat",
 				"bootpath" : "/Users/larme/Documents/Max/packages/_common/patchers/3rd",
-				"patcherrelativepath" : "../../../Documents/Max/packages/_common/patchers/3rd",
+				"patcherrelativepath" : "../patchers/3rd",
 				"type" : "JSON",
 				"implicit" : 1
 			}
