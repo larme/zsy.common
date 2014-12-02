@@ -1,0 +1,40 @@
+(use-package :parenscript)
+
+(defvar inlets 1)
+(defvar outlets 0)
+(setinletassist 0 (assist "prepend anything with \"store\" to write a line to disk, or with \"log\" to write a line with date to disk"))
+
+(defvar *open-date* (new (*date)))
+
+(defun gen-log-fn ()
+  (let* ((name (elt jsarguments 1))
+	 (year (chain *open-date* (get-full-year)))
+	 (month (chain *open-date* (get-month)))
+	 (day (chain *open-date* (get-date)))
+	 (hour (chain *open-date* (get-hours)))
+	 (minute (chain *open-date* (get-minutes)))
+	 (second (chain *open-date* (get-seconds)))
+	 (datestr (chain (array year month day hour minute second) (join "-"))))
+    (concatenate 'string "~/" name "-" datestr ".log")))
+
+(setf (@ gen-log-fn local) 1)
+
+(defvar *log-file* (new (*file (gen-log-fn) "write" "TEXT")))
+(with-slots (isopen position eof) *log-file*
+  (when isopen
+    (setf position eof)))
+
+(defun store (&rest l)
+  (let ((f *log-file*))
+    (chain f (writeline (chain l (join " "))))))
+
+(defun log (&rest l)
+  (let ((f *log-file*)
+	(now (new *date)))
+    (chain f (writeline (concatenate 'string
+				     ((@ now to-string))
+				     ": "
+				     (chain l (join " ")))))))
+
+(defun notifydeleted ()
+  (chain *log-file* (close)))
