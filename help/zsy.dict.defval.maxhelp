@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 28.0, 76.0, 640.0, 480.0 ],
+		"rect" : [ 0.0, 44.0, 659.0, 829.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,21 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Menlo Regular",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-10",
+					"linecount" : 44,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 47.0, 292.0, 535.0, 621.0 ],
+					"text" : "┌──────────────────────────────────────────────────────────────────────┐\n│┌────────────────────────────────────────────────────────────────────┐│\n││[zsy.dict.defval] is a [dict] compatible object. It provides a way  ││\n││to get the default value of a key if the key is not present in the  ││\n││dictionary                                                          ││\n││                                                                    ││\n││[zsy.dict.defval] require the name argument. So you always use it as││\n││[zsy.dict.defval dictname]. It adds 2 command messages: defset and  ││\n││defget.                                                             ││\n│└────────────────────────────────────────────────────────────────────┘│\n│                                                                      │\n│ Two more messages besides the normal [dict] messages:                │\n│                                                                      │\n│ (defget key defvalue): if key exists in dictionary, the              │\n│ corresponding value will be sent out; else the defvalue will         │\n│ be sent out                                                          │\n│                                                                      │\n│ (defset key defvalue): if key exists in dictionary, the value        │\n│ is untouched; else the value is updated with defvalue                │\n│                                │                                     │\n│                                │                                     │\n│  ┌─────────────────────────────┘                                     │\n│  │                                                                   │\n│  ▼                                                                   │\n│ ┌─┐                                       ┌─┐                        │\n│┌┴─┴───────────────────────────────────────┴─┴┐                       │\n││zsy.dict.defval dictname(required)           │                       │\n│└┬─┬──────────┬─┬────────────┬─┬───────────┬─┬┘                       │\n│ └─┘          └─┘            └─┘           └─┘                        │\n│  │            │              │             │                         │\n│  │            │              │             │                         │\n│  │            │              │             │                         │\n│  └────────────┴─────┬────────┴─────────────┘                         │\n│                     │                                                │\n│                     │                                                │\n│                     │                                                │\n│                     ▼                                                │\n│       These outlets work like                                        │\n│       [dict]'s outlets                                               │\n│                                                                      │\n│                                                                      │\n│                                                                      │\n│                                                                      │\n└──────────────────────────────────────────────────────────────────────┘"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
